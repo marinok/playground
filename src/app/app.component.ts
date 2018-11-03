@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef, ChangeDetectorRef, ViewChildren } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-  title = 'playground';
+  isShown: boolean = false;
+  @ViewChild('test') test: ElementRef;
+
+  constructor(private cdr:ChangeDetectorRef){}
+
+  onClickFn() {
+    this.isShown = true;
+    this.cdr.detach();
+    this.cdr.detectChanges();
+    console.log(this.test);
+    
+  }
+
 }
