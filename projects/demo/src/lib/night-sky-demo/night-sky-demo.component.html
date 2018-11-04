@@ -1,0 +1,9 @@
+<h3>Night sky</h3>
+<p>I know! There are 
+  <input type="number"
+    class="string-input"
+    [(ngModel)]="starsAmount" 
+    (ngModelChange)="onStarsAmountChange()"/> 
+  stars at the sky!
+</p>
+<app-night-sky [starsAmount]="starsAmount"></app-night-sky>

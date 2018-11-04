@@ -5,18 +5,11 @@
       <button type="button" (click)="onClickFn()">Click</button>
       <p #test *ngIf="isShown">Use ChangeDetectorRef to detect changes</p>
   </div>
+
   <div class="mb32">
-      <h3>Night sky</h3>
-      <p>I know! There are 
-        <input type="number"
-          class="string-input"
-          [(ngModel)]="starsAmount" 
-          (ngModelChange)="onStarsAmountChange()"/> 
-        stars at the sky!
-      </p>
-      <app-night-sky [starsAmount]="starsAmount"></app-night-sky>
+      
   </div>
-  
+  <lib-demo></lib-demo>
 </div>
 
-<router-outlet></router-outlet>
+

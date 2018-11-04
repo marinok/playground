@@ -4,18 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NightSkyComponent } from './components/night-sky/night-sky.component';
+import { DemoModule } from '../../projects/demo/src/lib/demo.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NightSkyComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    DemoModule
   ],
+  exports: [AppComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
