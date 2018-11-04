@@ -7,6 +7,8 @@ import { Component, ViewChild, ElementRef, ChangeDetectorRef, ViewChildren } fro
 })
 export class AppComponent {
   isShown: boolean = false;
+  starsAmount: number;
+
   @ViewChild('test') test: ElementRef;
 
   constructor(private cdr:ChangeDetectorRef){}
@@ -16,6 +18,10 @@ export class AppComponent {
     this.cdr.detach();
     this.cdr.detectChanges();
     console.log(this.test);
+    
+  }
+
+  onStarsAmountChange() {
     
   }
 
