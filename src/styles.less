@@ -7,6 +7,7 @@
 html, body {
     font-family: Tahoma;
     font-size: 13px;
+    height: 100%;
 }
 
 h3 {
@@ -46,4 +47,24 @@ p {
     min-width: 60px;
     width: auto;
     text-align: center;
+}
+
+// Navigation
+.navigation {
+    border-right: 1px solid #cecece;
+    min-width: 160px;
+    a {
+        display: block;
+        padding: 6px 12px;
+        background: #f1f1f1; 
+        margin-bottom: 2px;
+        color: #000;
+        text-decoration: none;
+        &:hover {
+            background: #e2e2e2;
+        }
+        &.active {
+            background: #d0cff7;
+        }
+    }
 }

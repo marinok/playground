@@ -1,11 +1,10 @@
-<div class="mb32">
-        <nav>
-          <a routerLink="/svg" routerLinkActive="active">SVG icons</a>
-          <a routerLink="/night-sky" routerLinkActive="active">Night sky</a>
-        </nav>
-    </div>
-
-<router-outlet></router-outlet>
-<p>
-    demo works!
-</p>
+<div class="flex" style="height:100%">
+    <nav class="navigation">
+        <a routerLink="/common" routerLinkActive="active">Common</a>
+        <a routerLink="/svg" routerLinkActive="active">SVG icons</a>
+        <a routerLink="/night-sky" routerLinkActive="active">Night sky</a>
+    </nav>
+    <section class="flex-growth page-content">
+        <router-outlet></router-outlet>
+    </section>
+</div>

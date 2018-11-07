@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,7 +13,6 @@ import { DemoModule } from '../../projects/demo/src/lib/demo.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
     DemoModule
   ],
   exports: [AppComponent],
